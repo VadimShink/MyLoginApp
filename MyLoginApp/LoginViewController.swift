@@ -14,7 +14,7 @@ class LoginViewController: UIViewController {
     @IBOutlet var myPasswordTextField: UITextField!
     
     //MARK: - Private Properties
-    let user = User.getUserData()
+    private let user = User.getUserData()
     
     //MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -41,13 +41,19 @@ class LoginViewController: UIViewController {
         performSegue(withIdentifier: "logIn", sender: nil)
     }
     
+    @IBAction func myForgotUserNamePressed() {
+        showAlert(title: "Oops!",
+                  message: "Your name is \(user.login) 😉")
+    }
+    @IBAction func myForgotPasswordPressed() {
+        showAlert(title: "Oops!",
+                  message: "Your password is \(user.password) 😉")
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
     }
-
-
 }
 
 //MARK: - Alert Controller
@@ -62,3 +68,20 @@ extension LoginViewController {
     }
 }
 
+//MARK: - Text Field Delegate
+extension LoginViewController: UITextFieldDelegate {
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super.touchesBegan(touches, with: event)
+        view.endEditing(true)
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        if textField == myUserNameTextField {
+            myPasswordTextField.becomeFirstResponder()
+        } else {
+            myLogInPressed()
+        }
+        return true
+    }
+}

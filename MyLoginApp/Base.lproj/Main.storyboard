@@ -42,6 +42,9 @@
                                 <buttonConfiguration key="configuration" style="plain" title="Forgot User Name?">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="13"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="myForgotUserNamePressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="18W-Vp-VdO"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Plz-Fo-iWE">
                                 <rect key="frame" x="202" y="368.5" width="133" height="30"/>
@@ -49,6 +52,9 @@
                                 <buttonConfiguration key="configuration" style="plain" title="Forgot Password?">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="13"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="myForgotPasswordPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="npU-w0-bpy"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -72,7 +78,7 @@
                     <connections>
                         <outlet property="myPasswordTextField" destination="2iG-zz-pIa" id="KQs-kk-lZl"/>
                         <outlet property="myUserNameTextField" destination="VGz-w0-CEK" id="D4U-ha-huW"/>
-                        <segue destination="qF0-kK-ixE" kind="presentation" id="qmw-0f-uBr"/>
+                        <segue destination="qF0-kK-ixE" kind="presentation" identifier="logIn" modalPresentationStyle="fullScreen" id="qmw-0f-uBr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -185,8 +191,8 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="BR2-S2-Xlo" kind="relationship" relationship="viewControllers" id="qOp-lD-5OS"/>
-                        <segue destination="aVl-na-mJR" kind="relationship" relationship="viewControllers" id="6Ed-ob-bHG"/>
+                        <segue destination="aVl-na-mJR" kind="relationship" relationship="viewControllers" id="bG1-hZ-3fE"/>
+                        <segue destination="BR2-S2-Xlo" kind="relationship" relationship="viewControllers" id="GED-du-28x"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CpD-Yq-5SH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
