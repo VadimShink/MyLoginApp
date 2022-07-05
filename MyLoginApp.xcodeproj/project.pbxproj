@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		148ABC29287443860097AD21 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148ABC28287443860097AD21 /* AppDelegate.swift */; };
 		148ABC2B287443860097AD21 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148ABC2A287443860097AD21 /* SceneDelegate.swift */; };
-		148ABC2D287443860097AD21 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148ABC2C287443860097AD21 /* ViewController.swift */; };
+		148ABC2D287443860097AD21 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148ABC2C287443860097AD21 /* LoginViewController.swift */; };
 		148ABC30287443860097AD21 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 148ABC2E287443860097AD21 /* Main.storyboard */; };
 		148ABC322874438A0097AD21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 148ABC312874438A0097AD21 /* Assets.xcassets */; };
 		148ABC352874438A0097AD21 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 148ABC332874438A0097AD21 /* LaunchScreen.storyboard */; };
+		148ABC3D287450000097AD21 /* AboutMeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148ABC3C287450000097AD21 /* AboutMeViewController.swift */; };
+		148ABC3F287450BB0097AD21 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148ABC3E287450BB0097AD21 /* WelcomeViewController.swift */; };
+		148ABC41287450EA0097AD21 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148ABC40287450EA0097AD21 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		148ABC25287443860097AD21 /* MyLoginApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyLoginApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		148ABC28287443860097AD21 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		148ABC2A287443860097AD21 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		148ABC2C287443860097AD21 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		148ABC2C287443860097AD21 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		148ABC2F287443860097AD21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		148ABC312874438A0097AD21 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		148ABC342874438A0097AD21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		148ABC362874438A0097AD21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		148ABC3C287450000097AD21 /* AboutMeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutMeViewController.swift; sourceTree = "<group>"; };
+		148ABC3E287450BB0097AD21 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		148ABC40287450EA0097AD21 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +64,10 @@
 			children = (
 				148ABC28287443860097AD21 /* AppDelegate.swift */,
 				148ABC2A287443860097AD21 /* SceneDelegate.swift */,
-				148ABC2C287443860097AD21 /* ViewController.swift */,
+				148ABC2C287443860097AD21 /* LoginViewController.swift */,
+				148ABC3C287450000097AD21 /* AboutMeViewController.swift */,
+				148ABC3E287450BB0097AD21 /* WelcomeViewController.swift */,
+				148ABC40287450EA0097AD21 /* User.swift */,
 				148ABC2E287443860097AD21 /* Main.storyboard */,
 				148ABC312874438A0097AD21 /* Assets.xcassets */,
 				148ABC332874438A0097AD21 /* LaunchScreen.storyboard */,
@@ -138,8 +147,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				148ABC2D287443860097AD21 /* ViewController.swift in Sources */,
+				148ABC2D287443860097AD21 /* LoginViewController.swift in Sources */,
+				148ABC3F287450BB0097AD21 /* WelcomeViewController.swift in Sources */,
+				148ABC41287450EA0097AD21 /* User.swift in Sources */,
 				148ABC29287443860097AD21 /* AppDelegate.swift in Sources */,
+				148ABC3D287450000097AD21 /* AboutMeViewController.swift in Sources */,
 				148ABC2B287443860097AD21 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -304,7 +316,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -332,7 +344,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
