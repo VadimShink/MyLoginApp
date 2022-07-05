@@ -75,6 +75,7 @@
                             <constraint firstItem="dXz-sR-H9o" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="uaf-kC-y3F"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="1xf-FT-GJZ"/>
                     <connections>
                         <outlet property="myPasswordTextField" destination="2iG-zz-pIa" id="KQs-kk-lZl"/>
                         <outlet property="myUserNameTextField" destination="VGz-w0-CEK" id="D4U-ha-huW"/>
@@ -131,7 +132,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OLK-c6-o2k" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="671" y="946"/>
+            <point key="canvasLocation" x="652" y="946"/>
         </scene>
         <!--About Me View Controller-->
         <scene sceneID="FER-QZ-MkG">
@@ -159,7 +160,9 @@
                             <constraint firstItem="0Ng-E6-cLj" firstAttribute="centerX" secondItem="fCT-Gh-FD4" secondAttribute="centerX" id="JgH-Bu-7Bg"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="DhB-iQ-4es"/>
+                    <navigationItem key="navigationItem" id="DhB-iQ-4es">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="kye-Fs-E4B"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Oyz-fb-vG2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
